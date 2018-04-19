@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+ <style type="text/css">
+ <title>HERENCIA</title>
+ <body>
+      #caja .cabecera h1 {color:yellow;} /*Puntuación (A,B,C,D)=0,1,0,1.*/
+      #caja .cabecera h1 {color:green;} /*Puntuación (A,B,C,D)=0,1,1,1.*/
+      header h1 {color:red;} /*Puntuación (A,B,C,D)=0,0,0,2.*/
+      h1 {color:purple;} /*Puntuación (A,B,C,D)=0,0,0,1.*/
+      h1 {color:grey;} /*Puntuación (A,B,C,D)=0,0,0,1.*/
+      h1 {background-color:#A2EAEA;} /*Puntuación (A,B,C,D)=0,0,0,1. Sería también ganador, ya que la propiedad aplicada no interfiere con ninguna otra*/
+   </style>
+
+   <header class="cabecera">
+      <h1 style="color: red;
+                 font-family: sans-serif;
+                 font-size: 50px ">Cabecera: header</h1> <--Puntuación (A,B,C,D)=1,0,0,0. Sería el GANADOR-->
+      [...]
+   
+   </header>
+</body>
+   <html>

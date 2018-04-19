@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+	<head>
+
+
+		<title>MODULO 3 - Ejercicio Obligatorio</title>
+		<meta charset="UTF-8">
+
+		<link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+
+
+		<style type="text/css">
+
+			.resultado {
+				font-family: 'Arial', serif;
+				font-size: 18pt;
+				border: 2px solid #288709;
+				background: #6DEFEB;
+				padding: 15px;
+				line-height: 30px;
+				border-radius: 25px 25px 25px 25px;
+				-moz-border-radius: 25px 25px 25px 25px;
+				-webkit-border-radius: 25px 25px 25px 25px;
+			}
+
+			.resultado h3 {
+				font-size: 30pt;
+			}
+
+			.titulo {
+				font-family: 'Arial', serif;
+				font-size: 36pt;
+				text-shadow: 4px 4px 4px #aaa;
+				text-align: center;
+				background: rgba(147,206,222,1);
+				background: -moz-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+				background: -webkit-gradient(left top, right top, color-stop(0%, rgba(147,206,222,1)), color-stop(41%, rgba(117,189,209,1)), color-stop(100%, rgba(73,165,191,1)));
+				background: -webkit-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+				background: -o-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+				background: -ms-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+				background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 );
+				border-radius: 25px 25px 25px 25px;
+				-moz-border-radius: 25px 25px 25px 25px;
+				-webkit-border-radius: 25px 25px 25px 25px;
+			}
+
+		</style>
+
+
+		
+
+<script type="text/javascript">
+
+			
+
+function mostrar_nombre()
+			{
+				var cl = document.getElementById("h1");
+				cl.innerHTML = "Daniel Jordan";
+			
+}
+
+		
+</script>
+
+		
+
+<script type="text/javascript">
+
+
+			
+
+function mostrar_propiedades()
+			{
+				var tit1 = document.getElementById("h1").outerHTML.replace(/</g,"&lt;").replace(/>/g,"&gt;");
+				var tit2 = document.getElementById("h2").innerHTML;
+
+				var result = document.getElementById("propiedad");
+
+				result.innerHTML = '<h3>PROPIEDADES DOM</h3>';
+				result.innerHTML = result.innerHTML + 'a) Contenido de innerHTML de elemento identificado por id="h2": <strong>' + tit2 + '</strong><br />';
+				result.innerHTML = result.innerHTML + 'b) Contenido de outerHTML de elemento identificado por id="h1": <strong>' + tit1 + '</strong><br />';
+				result.innerHTML = result.innerHTML + 'c) Contenido de la propiedad global location.href: <strong>' + location.href + '</strong><br />';
+				result.innerHTML = result.innerHTML + 'd) Contenido de la propiedad global location: <strong>' + location + '</strong><br />';
+				result.innerHTML = result.innerHTML + 'e) Contenido de las propiedades globales screen.width: <strong>' + screen.width + '</strong><br />';
+				result.innerHTML = result.innerHTML + '&nbsp;&nbsp;&nbsp;&nbsp;Contenido de las propiedades globales screen.height: <strong>' + screen.height + '</strong>';
+			
+}
+
+		
+</script>
+
+	
+
+</head>
+
+
+	
+
+<body>
+
+		<hr />
+		<strong>Vista del Documento HTML:</strong>
+		<hr />
+
+		<h1 id="h1" class="titulo"></h1>
+
+		<h2 id="h2">La fecha y la hora son:</h2>
+
+		<div id="fecha"></div>
+
+		<br /><br /><hr>
+		<div id="propiedad" class="resultado"></div>
+
+
+
+		<script type="text/javascript">
+
+			var fecha = new Date();
+			var msj;
+
+			if (fecha.getHours() < 7)
+			{
+				msj = "Buenas noches";
+			}
+			else if (fecha.getHours() < 12)
+			{
+				msj = "Buenos días";
+			}
+			else if (fecha.getHours() < 21)
+			{
+				msj = "Buenas tardes";
+			}
+			else
+			{
+				msj = "Buenas noches";
+			}
+
+			document.getElementById("h1").innerHTML    = msj;
+			document.getElementById("fecha").innerHTML = fecha;
+
+			mostrar_nombre();
+			mostrar_propiedades();
+
+		</script>
+
+		<br /><br /><hr />
+		
+		<hr />
+		
+	
+</body>
+
+
+</html>

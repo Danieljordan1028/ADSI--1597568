@@ -1,0 +1,36 @@
+body{
+	background: #17333C;
+	font-size: 17px;
+	font-family: Arial;
+	text-align: left
+
+}
+ 
+fieldset{
+	color: white;
+	background: #208AA7;
+	border-color: red;
+	}
+
+legend{
+
+	font-family: cursive;
+	font-size: 30px;
+	text-align: center;
+
+	}
+*{
+	font-family: 'Comfortaa', cursive;
+}
+
+@media screen and (max-width: 980px){
+    #contenedor{
+        width: 90%;
+    }
+    #contenido{
+        width: 60%;
+    }
+    #barra_lateral{
+        width:30%;
+    }
+
