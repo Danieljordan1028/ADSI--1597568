@@ -1,0 +1,39 @@
+/* 
+    Author     : Daniela Betancourt <daniagudelo0322@gmail.com>
+*/
+
+body {
+    margin: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 10vh;
+    background-color: chartreuse;  
+}   
+
+*{
+    font-family: 'Arial', sans-serif;
+    color: black;
+}
+
+.number1, .number2 {
+    font-size: 1.5rem;  
+    background-color: black;
+}
+
+.dani {
+    font-size: 1.8rem;
+    background-color: darkgreen;
+}
+.btn {
+    font-size: 1.5rem;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 67px;
+}
+@media( max-width:668.68px ){
+	body{
+		background-color: blue;       
+	}
+}
